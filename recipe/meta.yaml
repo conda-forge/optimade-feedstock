@@ -12,7 +12,7 @@ source:
 
 build:
   number: 1
-  skip: true   # [py2k]
+  noarch: python
   entry_points:
     - optimade-validator=optimade.validator:validate
   script: {{ PYTHON }} -m pip install . -vv
@@ -20,13 +20,13 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.5
   run:
     - email_validator >=1.1,<1.2
     - fastapi >=0.61.1,<0.62
     - lark-parser >=0.10.1,<0.11
     - pydantic >=1.6.1,<1.7
-    - python
+    - python >=3.5
     - requests >=2.24,<2.25
     - typing-extensions >=3.7,<3.8  # [py<38]
 
