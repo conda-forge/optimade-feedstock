@@ -28,7 +28,7 @@ requirements:
     - pydantic >=1.6.1,<1.7
     - python >=3.5
     - requests >=2.24,<2.25
-    - typing-extensions >=3.7,<3.8  # [py<38]
+    - typing-extensions >=3.7,<3.8
 
 test:
   imports:
