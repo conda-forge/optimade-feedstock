@@ -125,4 +125,5 @@ Feedstock Maintainers
 =====================
 
 * [@jan-janssen](https://github.com/jan-janssen/)
+* [@ml-evs](https://github.com/ml-evs/)
 
