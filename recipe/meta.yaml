@@ -24,7 +24,7 @@ requirements:
   run:
     - email_validator >=1.1,<1.2
     - fastapi >=0.63.0,<0.63.1
-    - lark-parser >=0.11.1,<0.11.2
+    - lark-parser >=0.11.2,<0.11.3
     - pydantic >=1.6.1,<1.7
     - python >=3.5
     - requests >=2.25,<2.26
