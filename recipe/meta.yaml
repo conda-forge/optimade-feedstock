@@ -1,5 +1,5 @@
 {% set name = "optimade" %}
-{% set version = "0.13.1" %}
+{% set version = "0.13.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optimade-{{ version }}.tar.gz
-  sha256: 5496a67cfb146b77d3bdb72c0d467a93ff7c33edb5b3d38213b4e768febe2d54
+  sha256: d2e7bb1cc2de9eb8c8b44ef5345b9e185f61096b5092d2026026e30da8c237e7
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
   run:
     - email_validator >=1.1,<1.2
     - fastapi >=0.63.0,<0.63.1
-    - lark-parser >=0.11.1,<0.11.2
+    - lark-parser >=0.11.2,<0.11.3
     - pydantic >=1.6.1,<1.7
     - python >=3.5
     - requests >=2.25,<2.26
