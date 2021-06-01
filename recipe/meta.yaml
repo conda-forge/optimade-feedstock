@@ -1,5 +1,5 @@
 {% set name = "optimade" %}
-{% set version = "0.14.1" %}
+{% set version = "0.15.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optimade-{{ version }}.tar.gz
-  sha256: 1645f5c3a8ee26b22b7dbf280d704f1b6580e9aafc50162824928a600a5ec091
+  sha256: 967b2af6b4bb50b24bf218de2e90b59a2c3963917e42ca45a7beca256289539e
 
 build:
   number: 0
