@@ -1,5 +1,5 @@
 {% set name = "optimade" %}
-{% set version = "0.16.1" %}
+{% set version = "0.16.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optimade-{{ version }}.tar.gz
-  sha256: 12538b944db68a28c80c27558784fdf42507ca1340004c1ee68d65c18f04340e
+  sha256: 6500243a11ad21e06b81a093e552e19f9282f5a67e32562ad7b65a7b6e3aee66
 
 build:
   number: 0
@@ -27,7 +27,7 @@ requirements:
     - lark-parser >=0.11.3,<0.12
     - pydantic >=1.8,<1.9
     - python >=3.7
-    - requests >=2.25,<2.26
+    - requests >=2.26,<2.27
 
 test:
   imports:
