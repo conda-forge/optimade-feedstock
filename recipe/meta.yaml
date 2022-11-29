@@ -11,7 +11,7 @@ source:
   sha256: 6eac353840941ca5bde615cf8cb4bf88628c42091326bf042bdf719ec9f47ff7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - optimade-validator=optimade.validator:validate
