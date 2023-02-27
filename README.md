@@ -1,11 +1,11 @@
-About optimade
-==============
+About optimade-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/optimade-feedstock/blob/main/LICENSE.txt)
 
 Home: http://www.optimade.org
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/optimade-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tools for implementing and consuming OPTIMADE APIs.
 
