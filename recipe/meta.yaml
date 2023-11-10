@@ -41,6 +41,7 @@ test:
   requires:
     - pip
     - httpx
+    - rich
 
 about:
   home: http://www.optimade.org
