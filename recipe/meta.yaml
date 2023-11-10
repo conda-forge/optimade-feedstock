@@ -42,6 +42,7 @@ test:
     - pip
     - httpx
     - rich
+    - click
 
 about:
   home: http://www.optimade.org
