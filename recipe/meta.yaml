@@ -1,5 +1,5 @@
 {% set name = "optimade" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/optimade-{{ version }}.tar.gz
-  sha256: fdc279db009bd2d701bbbe6820be1c56561ee8b9740d949d2bc3dac38a5b8fa9
+  sha256: c833a51cada62d77dd6410eb68f5e3221706b3a08bf7a5c120ab1d2d017c122b
 
 build:
   entry_points:
@@ -15,7 +15,7 @@ build:
     - optimade-get = optimade.client.cli:get
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
