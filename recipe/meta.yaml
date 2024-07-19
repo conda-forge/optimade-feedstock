@@ -43,6 +43,7 @@ test:
     - httpx
     - rich
     - click
+    - bson
 
 about:
   home: http://www.optimade.org
