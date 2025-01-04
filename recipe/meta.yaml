@@ -1,5 +1,6 @@
 {% set name = "optimade" %}
-{% set version = "1.1.8" %}
+{% set version = "1.1.9" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/optimade-{{ version }}.tar.gz
-  sha256: c0e5aada1960afde056ccf08646145f333e64741dabaa4eb6884d9c8e5e86c94
+  sha256: 271bc4e423972629eab21461c61623a799b4c9c9f4e7a2a8fee78b0bf1253dee
 
 build:
   entry_points:
@@ -19,12 +20,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=61.0.0
     - wheel
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - email_validator >=2.0,<3.dev0
     - lark >=1.1,<2.dev0
     - pydantic >=2.2,<3.dev0
@@ -43,6 +44,7 @@ test:
     - httpx
     - rich
     - click
+    - python {{ python_min }}
 
 about:
   home: http://www.optimade.org
