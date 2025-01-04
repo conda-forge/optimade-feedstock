@@ -19,12 +19,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools >=61.0.0
     - wheel
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - email_validator >=2.0,<3.dev0
     - lark >=1.1,<2.dev0
     - pydantic >=2.2,<3.dev0
@@ -43,6 +43,7 @@ test:
     - httpx
     - rich
     - click
+    - python {{ python_min }}
 
 about:
   home: http://www.optimade.org
