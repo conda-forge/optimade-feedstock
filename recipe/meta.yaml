@@ -42,7 +42,7 @@ test:
     - optimade-get --help
   requires:
     - pip
-    - httpx
+    - httpx2
     - rich
     - click
     - python {{ python_min }}
