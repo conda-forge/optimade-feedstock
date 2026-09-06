@@ -3,7 +3,6 @@ schema_version: 1
 context:
   name: optimade
   version: "1.5.0"
-  python_min: "3.10"
 
 package:
   name: ${{ name|lower }}
@@ -24,7 +23,7 @@ build:
 
 requirements:
   host:
-    - python 3.10.*
+    - python ${{ python_min }}.*
     - setuptools >=61.0.0
     - wheel
     - pip
@@ -42,7 +41,9 @@ tests:
       imports:
         - optimade
       pip_check: true
-      python_version: ${{ python_min }}
+      python_version:
+        - ${{ python_min }}
+        - "*"
   - requirements:
       run:
         - pip
